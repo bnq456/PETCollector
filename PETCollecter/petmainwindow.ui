@@ -14,280 +14,8 @@
    <string>PETMainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="1" column="1">
-     <widget class="QLabel" name="label_8">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>25</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>16777215</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>13</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Sunken</enum>
-      </property>
-      <property name="text">
-       <string>       PET Data Acquisition Program</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QGroupBox" name="groupBox_4">
-      <property name="title">
-       <string/>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_5">
-       <item row="1" column="0">
-        <widget class="QProgressBar" name="progressBarC">
-         <property name="value">
-          <number>24</number>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QTabWidget" name="tabWidget">
-         <property name="currentIndex">
-          <number>0</number>
-         </property>
-         <widget class="QWidget" name="tab">
-          <attribute name="title">
-           <string>Master module</string>
-          </attribute>
-          <layout class="QGridLayout" name="gridLayout_2">
-           <item row="0" column="0">
-            <widget class="QGroupBox" name="groupBox_2">
-             <property name="minimumSize">
-              <size>
-               <width>400</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="title">
-              <string/>
-             </property>
-             <layout class="QGridLayout" name="gridLayout_7">
-              <item row="2" column="0">
-               <widget class="QCheckBox" name="checkBoxRehex">
-                <property name="text">
-                 <string>Hexadecimal display</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_12">
-                <item>
-                 <widget class="QPushButton" name="pushButtonInitClock">
-                  <property name="text">
-                   <string>InitClock</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="pushButtonPoweron">
-                  <property name="text">
-                   <string>Power On</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="pushButtonPoweroff">
-                  <property name="text">
-                   <string>Power Off</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item row="0" column="0">
-               <layout class="QHBoxLayout" name="horizontalLayout_13">
-                <item>
-                 <widget class="QLineEdit" name="lineEditTcpIP">
-                  <property name="text">
-                   <string>192.168.1.250</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="lineEditTcpPort">
-                  <property name="text">
-                   <string>15000</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="pushButtonConnect">
-                  <property name="text">
-                   <string>Connect</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
-             <zorder>lineEditTcpIP</zorder>
-             <zorder>lineEditTcpPort</zorder>
-             <zorder>pushButtonConnect</zorder>
-             <zorder>pushButtonInitClock</zorder>
-             <zorder>pushButtonPoweron</zorder>
-             <zorder>pushButtonPoweroff</zorder>
-             <zorder>checkBoxRehex</zorder>
-             <zorder>label_8</zorder>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-         <widget class="QWidget" name="tab_2">
-          <attribute name="title">
-           <string>Data module</string>
-          </attribute>
-          <layout class="QGridLayout" name="gridLayout_11">
-           <item row="0" column="0">
-            <widget class="QGroupBox" name="groupBoxData">
-             <property name="title">
-              <string/>
-             </property>
-             <layout class="QGridLayout" name="gridLayout_10">
-              <item row="0" column="0" colspan="2">
-               <widget class="QGroupBox" name="groupBox_6">
-                <property name="title">
-                 <string/>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_8">
-                 <item row="0" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_9">
-                   <item>
-                    <widget class="QLabel" name="label_2">
-                     <property name="text">
-                      <string>File Prefix:</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="lineEditCFname"/>
-                   </item>
-                  </layout>
-                 </item>
-                 <item row="1" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_10">
-                   <item>
-                    <widget class="QLabel" name="label_6">
-                     <property name="text">
-                      <string>File Path:</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="lineEditCAddr">
-                     <property name="readOnly">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QPushButton" name="pushButtonCAddr">
-                     <property name="maximumSize">
-                      <size>
-                       <width>80</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string>Save</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item row="1" column="0" colspan="2">
-               <widget class="QGroupBox" name="groupBox_7">
-                <property name="title">
-                 <string/>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_9">
-                 <item row="0" column="0">
-                  <layout class="QHBoxLayout" name="horizontalLayout_11">
-                   <item>
-                    <widget class="QLabel" name="label_4">
-                     <property name="text">
-                      <string>Collect Time</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="lineEditCTime">
-                     <property name="text">
-                      <string>1</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QComboBox" name="comboBoxCTime">
-                     <item>
-                      <property name="text">
-                       <string>Minute</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Second</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Hour</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item row="2" column="0" colspan="2">
-               <widget class="QPushButton" name="pushButtonCollect">
-                <property name="text">
-                 <string>Collect</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QPushButton" name="pushButtonCancel">
-             <property name="text">
-              <string>Cancel</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="0" column="0" rowspan="2">
+   <layout class="QGridLayout" name="gridLayout_12">
+    <item row="0" column="0" rowspan="3">
      <widget class="QGroupBox" name="groupBox">
       <property name="minimumSize">
        <size>
@@ -630,6 +358,307 @@
         </widget>
        </item>
       </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Master module</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="2" column="0">
+               <widget class="QCheckBox" name="checkBoxRehex">
+                <property name="text">
+                 <string>Hexadecimal display</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_12">
+                <item>
+                 <widget class="QPushButton" name="pushButtonInitClock">
+                  <property name="text">
+                   <string>InitClock</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButtonPoweron">
+                  <property name="text">
+                   <string>Power On</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButtonPoweroff">
+                  <property name="text">
+                   <string>Power Off</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item>
+                 <widget class="QLineEdit" name="lineEditTcpIP">
+                  <property name="text">
+                   <string>192.168.1.250</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditTcpPort">
+                  <property name="text">
+                   <string>15000</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButtonConnect">
+                  <property name="text">
+                   <string>Connect</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Data module</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBoxData">
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0" colspan="2">
+               <widget class="QGroupBox" name="groupBox_6">
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <item>
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>File Prefix:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditCFname"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>File Path:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditCAddr">
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonCAddr">
+                     <property name="maximumSize">
+                      <size>
+                       <width>80</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>Save</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QGroupBox" name="groupBox_7">
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>Collect Time</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEditCTime">
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBoxCTime">
+                     <item>
+                      <property name="text">
+                       <string>Minute</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Second</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Hour</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="QPushButton" name="pushButtonCollect">
+                <property name="text">
+                 <string>Collect</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButtonCancel">
+             <property name="text">
+              <string>Cancel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Start time:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditStarttime">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>End time:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="lineEditEndtime">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="4">
+        <widget class="QProgressBar" name="progressBarC">
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_8">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>       PET Data Acquisition Program</string>
+      </property>
      </widget>
     </item>
    </layout>

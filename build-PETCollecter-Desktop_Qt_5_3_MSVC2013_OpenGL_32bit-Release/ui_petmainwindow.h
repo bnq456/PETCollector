@@ -36,46 +36,7 @@ class Ui_PETMainWindow
 {
 public:
     QWidget *centralWidget;
-    QGridLayout *gridLayout_3;
-    QLabel *label_8;
-    QGroupBox *groupBox_4;
-    QGridLayout *gridLayout_5;
-    QProgressBar *progressBarC;
-    QTabWidget *tabWidget;
-    QWidget *tab;
-    QGridLayout *gridLayout_2;
-    QGroupBox *groupBox_2;
-    QGridLayout *gridLayout_7;
-    QCheckBox *checkBoxRehex;
-    QHBoxLayout *horizontalLayout_12;
-    QPushButton *pushButtonInitClock;
-    QPushButton *pushButtonPoweron;
-    QPushButton *pushButtonPoweroff;
-    QHBoxLayout *horizontalLayout_13;
-    QLineEdit *lineEditTcpIP;
-    QLineEdit *lineEditTcpPort;
-    QPushButton *pushButtonConnect;
-    QWidget *tab_2;
-    QGridLayout *gridLayout_11;
-    QGroupBox *groupBoxData;
-    QGridLayout *gridLayout_10;
-    QGroupBox *groupBox_6;
-    QGridLayout *gridLayout_8;
-    QHBoxLayout *horizontalLayout_9;
-    QLabel *label_2;
-    QLineEdit *lineEditCFname;
-    QHBoxLayout *horizontalLayout_10;
-    QLabel *label_6;
-    QLineEdit *lineEditCAddr;
-    QPushButton *pushButtonCAddr;
-    QGroupBox *groupBox_7;
-    QGridLayout *gridLayout_9;
-    QHBoxLayout *horizontalLayout_11;
-    QLabel *label_4;
-    QLineEdit *lineEditCTime;
-    QComboBox *comboBoxCTime;
-    QPushButton *pushButtonCollect;
-    QPushButton *pushButtonCancel;
+    QGridLayout *gridLayout_12;
     QGroupBox *groupBox;
     QGridLayout *gridLayout_6;
     QGroupBox *groupBox_3;
@@ -115,6 +76,51 @@ public:
     QGroupBox *groupBox_5;
     QGridLayout *gridLayout_4;
     QTextEdit *textEditRe;
+    QGroupBox *groupBox_4;
+    QGridLayout *gridLayout_5;
+    QTabWidget *tabWidget;
+    QWidget *tab;
+    QGridLayout *gridLayout_2;
+    QGroupBox *groupBox_2;
+    QGridLayout *gridLayout_7;
+    QCheckBox *checkBoxRehex;
+    QHBoxLayout *horizontalLayout_12;
+    QPushButton *pushButtonInitClock;
+    QPushButton *pushButtonPoweron;
+    QPushButton *pushButtonPoweroff;
+    QHBoxLayout *horizontalLayout_13;
+    QLineEdit *lineEditTcpIP;
+    QLineEdit *lineEditTcpPort;
+    QPushButton *pushButtonConnect;
+    QWidget *tab_2;
+    QGridLayout *gridLayout_11;
+    QGroupBox *groupBoxData;
+    QGridLayout *gridLayout_10;
+    QGroupBox *groupBox_6;
+    QGridLayout *gridLayout_8;
+    QHBoxLayout *horizontalLayout_9;
+    QLabel *label_2;
+    QLineEdit *lineEditCFname;
+    QHBoxLayout *horizontalLayout_10;
+    QLabel *label_6;
+    QLineEdit *lineEditCAddr;
+    QPushButton *pushButtonCAddr;
+    QGroupBox *groupBox_7;
+    QGridLayout *gridLayout_9;
+    QHBoxLayout *horizontalLayout_11;
+    QLabel *label_4;
+    QLineEdit *lineEditCTime;
+    QComboBox *comboBoxCTime;
+    QPushButton *pushButtonCollect;
+    QPushButton *pushButtonCancel;
+    QGroupBox *groupBox_8;
+    QGridLayout *gridLayout_3;
+    QLabel *label_10;
+    QLineEdit *lineEditStarttime;
+    QLabel *label_12;
+    QLineEdit *lineEditEndtime;
+    QProgressBar *progressBarC;
+    QLabel *label_8;
     QMenuBar *menuBar;
     QStatusBar *statusBar;
 
@@ -125,220 +131,10 @@ public:
         PETMainWindow->resize(727, 449);
         centralWidget = new QWidget(PETMainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        gridLayout_3 = new QGridLayout(centralWidget);
-        gridLayout_3->setSpacing(6);
-        gridLayout_3->setContentsMargins(11, 11, 11, 11);
-        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
-        label_8 = new QLabel(centralWidget);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setMinimumSize(QSize(0, 25));
-        label_8->setMaximumSize(QSize(16777215, 16777215));
-        QFont font;
-        font.setPointSize(13);
-        font.setBold(true);
-        font.setWeight(75);
-        label_8->setFont(font);
-        label_8->setFrameShape(QFrame::Box);
-        label_8->setFrameShadow(QFrame::Sunken);
-
-        gridLayout_3->addWidget(label_8, 1, 1, 1, 1);
-
-        groupBox_4 = new QGroupBox(centralWidget);
-        groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
-        gridLayout_5 = new QGridLayout(groupBox_4);
-        gridLayout_5->setSpacing(6);
-        gridLayout_5->setContentsMargins(11, 11, 11, 11);
-        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
-        progressBarC = new QProgressBar(groupBox_4);
-        progressBarC->setObjectName(QStringLiteral("progressBarC"));
-        progressBarC->setValue(24);
-
-        gridLayout_5->addWidget(progressBarC, 1, 0, 1, 1);
-
-        tabWidget = new QTabWidget(groupBox_4);
-        tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tab = new QWidget();
-        tab->setObjectName(QStringLiteral("tab"));
-        gridLayout_2 = new QGridLayout(tab);
-        gridLayout_2->setSpacing(6);
-        gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        groupBox_2 = new QGroupBox(tab);
-        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setMinimumSize(QSize(400, 0));
-        gridLayout_7 = new QGridLayout(groupBox_2);
-        gridLayout_7->setSpacing(6);
-        gridLayout_7->setContentsMargins(11, 11, 11, 11);
-        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
-        checkBoxRehex = new QCheckBox(groupBox_2);
-        checkBoxRehex->setObjectName(QStringLiteral("checkBoxRehex"));
-
-        gridLayout_7->addWidget(checkBoxRehex, 2, 0, 1, 1);
-
-        horizontalLayout_12 = new QHBoxLayout();
-        horizontalLayout_12->setSpacing(6);
-        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
-        pushButtonInitClock = new QPushButton(groupBox_2);
-        pushButtonInitClock->setObjectName(QStringLiteral("pushButtonInitClock"));
-
-        horizontalLayout_12->addWidget(pushButtonInitClock);
-
-        pushButtonPoweron = new QPushButton(groupBox_2);
-        pushButtonPoweron->setObjectName(QStringLiteral("pushButtonPoweron"));
-
-        horizontalLayout_12->addWidget(pushButtonPoweron);
-
-        pushButtonPoweroff = new QPushButton(groupBox_2);
-        pushButtonPoweroff->setObjectName(QStringLiteral("pushButtonPoweroff"));
-
-        horizontalLayout_12->addWidget(pushButtonPoweroff);
-
-
-        gridLayout_7->addLayout(horizontalLayout_12, 1, 0, 1, 1);
-
-        horizontalLayout_13 = new QHBoxLayout();
-        horizontalLayout_13->setSpacing(6);
-        horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
-        lineEditTcpIP = new QLineEdit(groupBox_2);
-        lineEditTcpIP->setObjectName(QStringLiteral("lineEditTcpIP"));
-
-        horizontalLayout_13->addWidget(lineEditTcpIP);
-
-        lineEditTcpPort = new QLineEdit(groupBox_2);
-        lineEditTcpPort->setObjectName(QStringLiteral("lineEditTcpPort"));
-
-        horizontalLayout_13->addWidget(lineEditTcpPort);
-
-        pushButtonConnect = new QPushButton(groupBox_2);
-        pushButtonConnect->setObjectName(QStringLiteral("pushButtonConnect"));
-
-        horizontalLayout_13->addWidget(pushButtonConnect);
-
-
-        gridLayout_7->addLayout(horizontalLayout_13, 0, 0, 1, 1);
-
-        lineEditTcpIP->raise();
-        lineEditTcpPort->raise();
-        pushButtonConnect->raise();
-        pushButtonInitClock->raise();
-        pushButtonPoweron->raise();
-        pushButtonPoweroff->raise();
-        checkBoxRehex->raise();
-        label_8->raise();
-
-        gridLayout_2->addWidget(groupBox_2, 0, 0, 1, 1);
-
-        tabWidget->addTab(tab, QString());
-        tab_2 = new QWidget();
-        tab_2->setObjectName(QStringLiteral("tab_2"));
-        gridLayout_11 = new QGridLayout(tab_2);
-        gridLayout_11->setSpacing(6);
-        gridLayout_11->setContentsMargins(11, 11, 11, 11);
-        gridLayout_11->setObjectName(QStringLiteral("gridLayout_11"));
-        groupBoxData = new QGroupBox(tab_2);
-        groupBoxData->setObjectName(QStringLiteral("groupBoxData"));
-        gridLayout_10 = new QGridLayout(groupBoxData);
-        gridLayout_10->setSpacing(6);
-        gridLayout_10->setContentsMargins(11, 11, 11, 11);
-        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
-        groupBox_6 = new QGroupBox(groupBoxData);
-        groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
-        gridLayout_8 = new QGridLayout(groupBox_6);
-        gridLayout_8->setSpacing(6);
-        gridLayout_8->setContentsMargins(11, 11, 11, 11);
-        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
-        horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setSpacing(6);
-        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
-        label_2 = new QLabel(groupBox_6);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        horizontalLayout_9->addWidget(label_2);
-
-        lineEditCFname = new QLineEdit(groupBox_6);
-        lineEditCFname->setObjectName(QStringLiteral("lineEditCFname"));
-
-        horizontalLayout_9->addWidget(lineEditCFname);
-
-
-        gridLayout_8->addLayout(horizontalLayout_9, 0, 0, 1, 1);
-
-        horizontalLayout_10 = new QHBoxLayout();
-        horizontalLayout_10->setSpacing(6);
-        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
-        label_6 = new QLabel(groupBox_6);
-        label_6->setObjectName(QStringLiteral("label_6"));
-
-        horizontalLayout_10->addWidget(label_6);
-
-        lineEditCAddr = new QLineEdit(groupBox_6);
-        lineEditCAddr->setObjectName(QStringLiteral("lineEditCAddr"));
-        lineEditCAddr->setReadOnly(true);
-
-        horizontalLayout_10->addWidget(lineEditCAddr);
-
-        pushButtonCAddr = new QPushButton(groupBox_6);
-        pushButtonCAddr->setObjectName(QStringLiteral("pushButtonCAddr"));
-        pushButtonCAddr->setMaximumSize(QSize(80, 16777215));
-
-        horizontalLayout_10->addWidget(pushButtonCAddr);
-
-
-        gridLayout_8->addLayout(horizontalLayout_10, 1, 0, 1, 1);
-
-
-        gridLayout_10->addWidget(groupBox_6, 0, 0, 1, 2);
-
-        groupBox_7 = new QGroupBox(groupBoxData);
-        groupBox_7->setObjectName(QStringLiteral("groupBox_7"));
-        gridLayout_9 = new QGridLayout(groupBox_7);
-        gridLayout_9->setSpacing(6);
-        gridLayout_9->setContentsMargins(11, 11, 11, 11);
-        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
-        horizontalLayout_11 = new QHBoxLayout();
-        horizontalLayout_11->setSpacing(6);
-        horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
-        label_4 = new QLabel(groupBox_7);
-        label_4->setObjectName(QStringLiteral("label_4"));
-
-        horizontalLayout_11->addWidget(label_4);
-
-        lineEditCTime = new QLineEdit(groupBox_7);
-        lineEditCTime->setObjectName(QStringLiteral("lineEditCTime"));
-
-        horizontalLayout_11->addWidget(lineEditCTime);
-
-        comboBoxCTime = new QComboBox(groupBox_7);
-        comboBoxCTime->setObjectName(QStringLiteral("comboBoxCTime"));
-
-        horizontalLayout_11->addWidget(comboBoxCTime);
-
-
-        gridLayout_9->addLayout(horizontalLayout_11, 0, 0, 1, 1);
-
-
-        gridLayout_10->addWidget(groupBox_7, 1, 0, 1, 2);
-
-        pushButtonCollect = new QPushButton(groupBoxData);
-        pushButtonCollect->setObjectName(QStringLiteral("pushButtonCollect"));
-
-        gridLayout_10->addWidget(pushButtonCollect, 2, 0, 1, 2);
-
-
-        gridLayout_11->addWidget(groupBoxData, 0, 0, 1, 1);
-
-        pushButtonCancel = new QPushButton(tab_2);
-        pushButtonCancel->setObjectName(QStringLiteral("pushButtonCancel"));
-
-        gridLayout_11->addWidget(pushButtonCancel, 1, 0, 1, 1);
-
-        tabWidget->addTab(tab_2, QString());
-
-        gridLayout_5->addWidget(tabWidget, 0, 0, 1, 1);
-
-
-        gridLayout_3->addWidget(groupBox_4, 0, 1, 1, 1);
-
+        gridLayout_12 = new QGridLayout(centralWidget);
+        gridLayout_12->setSpacing(6);
+        gridLayout_12->setContentsMargins(11, 11, 11, 11);
+        gridLayout_12->setObjectName(QStringLiteral("gridLayout_12"));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
         groupBox->setMinimumSize(QSize(0, 0));
@@ -565,7 +361,240 @@ public:
         gridLayout_6->addWidget(groupBox_5, 1, 0, 1, 1);
 
 
-        gridLayout_3->addWidget(groupBox, 0, 0, 2, 1);
+        gridLayout_12->addWidget(groupBox, 0, 0, 3, 1);
+
+        groupBox_4 = new QGroupBox(centralWidget);
+        groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
+        gridLayout_5 = new QGridLayout(groupBox_4);
+        gridLayout_5->setSpacing(6);
+        gridLayout_5->setContentsMargins(11, 11, 11, 11);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        tabWidget = new QTabWidget(groupBox_4);
+        tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tab = new QWidget();
+        tab->setObjectName(QStringLiteral("tab"));
+        gridLayout_2 = new QGridLayout(tab);
+        gridLayout_2->setSpacing(6);
+        gridLayout_2->setContentsMargins(11, 11, 11, 11);
+        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        groupBox_2 = new QGroupBox(tab);
+        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
+        groupBox_2->setMinimumSize(QSize(400, 0));
+        gridLayout_7 = new QGridLayout(groupBox_2);
+        gridLayout_7->setSpacing(6);
+        gridLayout_7->setContentsMargins(11, 11, 11, 11);
+        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
+        checkBoxRehex = new QCheckBox(groupBox_2);
+        checkBoxRehex->setObjectName(QStringLiteral("checkBoxRehex"));
+
+        gridLayout_7->addWidget(checkBoxRehex, 2, 0, 1, 1);
+
+        horizontalLayout_12 = new QHBoxLayout();
+        horizontalLayout_12->setSpacing(6);
+        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
+        pushButtonInitClock = new QPushButton(groupBox_2);
+        pushButtonInitClock->setObjectName(QStringLiteral("pushButtonInitClock"));
+
+        horizontalLayout_12->addWidget(pushButtonInitClock);
+
+        pushButtonPoweron = new QPushButton(groupBox_2);
+        pushButtonPoweron->setObjectName(QStringLiteral("pushButtonPoweron"));
+
+        horizontalLayout_12->addWidget(pushButtonPoweron);
+
+        pushButtonPoweroff = new QPushButton(groupBox_2);
+        pushButtonPoweroff->setObjectName(QStringLiteral("pushButtonPoweroff"));
+
+        horizontalLayout_12->addWidget(pushButtonPoweroff);
+
+
+        gridLayout_7->addLayout(horizontalLayout_12, 1, 0, 1, 1);
+
+        horizontalLayout_13 = new QHBoxLayout();
+        horizontalLayout_13->setSpacing(6);
+        horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
+        lineEditTcpIP = new QLineEdit(groupBox_2);
+        lineEditTcpIP->setObjectName(QStringLiteral("lineEditTcpIP"));
+
+        horizontalLayout_13->addWidget(lineEditTcpIP);
+
+        lineEditTcpPort = new QLineEdit(groupBox_2);
+        lineEditTcpPort->setObjectName(QStringLiteral("lineEditTcpPort"));
+
+        horizontalLayout_13->addWidget(lineEditTcpPort);
+
+        pushButtonConnect = new QPushButton(groupBox_2);
+        pushButtonConnect->setObjectName(QStringLiteral("pushButtonConnect"));
+
+        horizontalLayout_13->addWidget(pushButtonConnect);
+
+
+        gridLayout_7->addLayout(horizontalLayout_13, 0, 0, 1, 1);
+
+
+        gridLayout_2->addWidget(groupBox_2, 0, 0, 1, 1);
+
+        tabWidget->addTab(tab, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QStringLiteral("tab_2"));
+        gridLayout_11 = new QGridLayout(tab_2);
+        gridLayout_11->setSpacing(6);
+        gridLayout_11->setContentsMargins(11, 11, 11, 11);
+        gridLayout_11->setObjectName(QStringLiteral("gridLayout_11"));
+        groupBoxData = new QGroupBox(tab_2);
+        groupBoxData->setObjectName(QStringLiteral("groupBoxData"));
+        gridLayout_10 = new QGridLayout(groupBoxData);
+        gridLayout_10->setSpacing(6);
+        gridLayout_10->setContentsMargins(11, 11, 11, 11);
+        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
+        groupBox_6 = new QGroupBox(groupBoxData);
+        groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
+        gridLayout_8 = new QGridLayout(groupBox_6);
+        gridLayout_8->setSpacing(6);
+        gridLayout_8->setContentsMargins(11, 11, 11, 11);
+        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setSpacing(6);
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        label_2 = new QLabel(groupBox_6);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        horizontalLayout_9->addWidget(label_2);
+
+        lineEditCFname = new QLineEdit(groupBox_6);
+        lineEditCFname->setObjectName(QStringLiteral("lineEditCFname"));
+
+        horizontalLayout_9->addWidget(lineEditCFname);
+
+
+        gridLayout_8->addLayout(horizontalLayout_9, 0, 0, 1, 1);
+
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setSpacing(6);
+        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
+        label_6 = new QLabel(groupBox_6);
+        label_6->setObjectName(QStringLiteral("label_6"));
+
+        horizontalLayout_10->addWidget(label_6);
+
+        lineEditCAddr = new QLineEdit(groupBox_6);
+        lineEditCAddr->setObjectName(QStringLiteral("lineEditCAddr"));
+        lineEditCAddr->setReadOnly(true);
+
+        horizontalLayout_10->addWidget(lineEditCAddr);
+
+        pushButtonCAddr = new QPushButton(groupBox_6);
+        pushButtonCAddr->setObjectName(QStringLiteral("pushButtonCAddr"));
+        pushButtonCAddr->setMaximumSize(QSize(80, 16777215));
+
+        horizontalLayout_10->addWidget(pushButtonCAddr);
+
+
+        gridLayout_8->addLayout(horizontalLayout_10, 1, 0, 1, 1);
+
+
+        gridLayout_10->addWidget(groupBox_6, 0, 0, 1, 2);
+
+        groupBox_7 = new QGroupBox(groupBoxData);
+        groupBox_7->setObjectName(QStringLiteral("groupBox_7"));
+        gridLayout_9 = new QGridLayout(groupBox_7);
+        gridLayout_9->setSpacing(6);
+        gridLayout_9->setContentsMargins(11, 11, 11, 11);
+        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
+        horizontalLayout_11 = new QHBoxLayout();
+        horizontalLayout_11->setSpacing(6);
+        horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
+        label_4 = new QLabel(groupBox_7);
+        label_4->setObjectName(QStringLiteral("label_4"));
+
+        horizontalLayout_11->addWidget(label_4);
+
+        lineEditCTime = new QLineEdit(groupBox_7);
+        lineEditCTime->setObjectName(QStringLiteral("lineEditCTime"));
+
+        horizontalLayout_11->addWidget(lineEditCTime);
+
+        comboBoxCTime = new QComboBox(groupBox_7);
+        comboBoxCTime->setObjectName(QStringLiteral("comboBoxCTime"));
+
+        horizontalLayout_11->addWidget(comboBoxCTime);
+
+
+        gridLayout_9->addLayout(horizontalLayout_11, 0, 0, 1, 1);
+
+
+        gridLayout_10->addWidget(groupBox_7, 1, 0, 1, 2);
+
+        pushButtonCollect = new QPushButton(groupBoxData);
+        pushButtonCollect->setObjectName(QStringLiteral("pushButtonCollect"));
+
+        gridLayout_10->addWidget(pushButtonCollect, 2, 0, 1, 2);
+
+
+        gridLayout_11->addWidget(groupBoxData, 0, 0, 1, 1);
+
+        pushButtonCancel = new QPushButton(tab_2);
+        pushButtonCancel->setObjectName(QStringLiteral("pushButtonCancel"));
+
+        gridLayout_11->addWidget(pushButtonCancel, 1, 0, 1, 1);
+
+        tabWidget->addTab(tab_2, QString());
+
+        gridLayout_5->addWidget(tabWidget, 0, 0, 1, 1);
+
+
+        gridLayout_12->addWidget(groupBox_4, 0, 1, 1, 1);
+
+        groupBox_8 = new QGroupBox(centralWidget);
+        groupBox_8->setObjectName(QStringLiteral("groupBox_8"));
+        gridLayout_3 = new QGridLayout(groupBox_8);
+        gridLayout_3->setSpacing(6);
+        gridLayout_3->setContentsMargins(11, 11, 11, 11);
+        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
+        label_10 = new QLabel(groupBox_8);
+        label_10->setObjectName(QStringLiteral("label_10"));
+
+        gridLayout_3->addWidget(label_10, 0, 0, 1, 1);
+
+        lineEditStarttime = new QLineEdit(groupBox_8);
+        lineEditStarttime->setObjectName(QStringLiteral("lineEditStarttime"));
+        lineEditStarttime->setReadOnly(true);
+
+        gridLayout_3->addWidget(lineEditStarttime, 0, 1, 1, 1);
+
+        label_12 = new QLabel(groupBox_8);
+        label_12->setObjectName(QStringLiteral("label_12"));
+
+        gridLayout_3->addWidget(label_12, 0, 2, 1, 1);
+
+        lineEditEndtime = new QLineEdit(groupBox_8);
+        lineEditEndtime->setObjectName(QStringLiteral("lineEditEndtime"));
+        lineEditEndtime->setReadOnly(true);
+
+        gridLayout_3->addWidget(lineEditEndtime, 0, 3, 1, 1);
+
+        progressBarC = new QProgressBar(groupBox_8);
+        progressBarC->setObjectName(QStringLiteral("progressBarC"));
+        progressBarC->setValue(24);
+
+        gridLayout_3->addWidget(progressBarC, 1, 0, 1, 4);
+
+
+        gridLayout_12->addWidget(groupBox_8, 1, 1, 1, 1);
+
+        label_8 = new QLabel(centralWidget);
+        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setMinimumSize(QSize(0, 25));
+        label_8->setMaximumSize(QSize(16777215, 16777215));
+        QFont font;
+        font.setPointSize(13);
+        font.setBold(true);
+        font.setWeight(75);
+        label_8->setFont(font);
+        label_8->setFrameShape(QFrame::Box);
+        label_8->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_12->addWidget(label_8, 2, 1, 1, 1);
 
         PETMainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PETMainWindow);
@@ -587,34 +616,6 @@ public:
     void retranslateUi(QMainWindow *PETMainWindow)
     {
         PETMainWindow->setWindowTitle(QApplication::translate("PETMainWindow", "PETMainWindow", 0));
-        label_8->setText(QApplication::translate("PETMainWindow", "       PET Data Acquisition Program", 0));
-        groupBox_4->setTitle(QString());
-        groupBox_2->setTitle(QString());
-        checkBoxRehex->setText(QApplication::translate("PETMainWindow", "Hexadecimal display", 0));
-        pushButtonInitClock->setText(QApplication::translate("PETMainWindow", "InitClock", 0));
-        pushButtonPoweron->setText(QApplication::translate("PETMainWindow", "Power On", 0));
-        pushButtonPoweroff->setText(QApplication::translate("PETMainWindow", "Power Off", 0));
-        lineEditTcpIP->setText(QApplication::translate("PETMainWindow", "192.168.1.250", 0));
-        lineEditTcpPort->setText(QApplication::translate("PETMainWindow", "15000", 0));
-        pushButtonConnect->setText(QApplication::translate("PETMainWindow", "Connect", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("PETMainWindow", "Master module", 0));
-        groupBoxData->setTitle(QString());
-        groupBox_6->setTitle(QString());
-        label_2->setText(QApplication::translate("PETMainWindow", "File Prefix:", 0));
-        label_6->setText(QApplication::translate("PETMainWindow", "File Path:", 0));
-        pushButtonCAddr->setText(QApplication::translate("PETMainWindow", "Save", 0));
-        groupBox_7->setTitle(QString());
-        label_4->setText(QApplication::translate("PETMainWindow", "Collect Time", 0));
-        lineEditCTime->setText(QApplication::translate("PETMainWindow", "1", 0));
-        comboBoxCTime->clear();
-        comboBoxCTime->insertItems(0, QStringList()
-         << QApplication::translate("PETMainWindow", "Minute", 0)
-         << QApplication::translate("PETMainWindow", "Second", 0)
-         << QApplication::translate("PETMainWindow", "Hour", 0)
-        );
-        pushButtonCollect->setText(QApplication::translate("PETMainWindow", "Collect", 0));
-        pushButtonCancel->setText(QApplication::translate("PETMainWindow", "Cancel", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("PETMainWindow", "Data module", 0));
         groupBox->setTitle(QString());
         groupBox_3->setTitle(QApplication::translate("PETMainWindow", "Detector Statue", 0));
         label_5->setText(QApplication::translate("PETMainWindow", "Detector 2", 0));
@@ -642,6 +643,37 @@ public:
         labelSd4->setText(QString());
         checkBoxD4->setText(QString());
         groupBox_5->setTitle(QApplication::translate("PETMainWindow", "Communication status", 0));
+        groupBox_4->setTitle(QString());
+        groupBox_2->setTitle(QString());
+        checkBoxRehex->setText(QApplication::translate("PETMainWindow", "Hexadecimal display", 0));
+        pushButtonInitClock->setText(QApplication::translate("PETMainWindow", "InitClock", 0));
+        pushButtonPoweron->setText(QApplication::translate("PETMainWindow", "Power On", 0));
+        pushButtonPoweroff->setText(QApplication::translate("PETMainWindow", "Power Off", 0));
+        lineEditTcpIP->setText(QApplication::translate("PETMainWindow", "192.168.1.250", 0));
+        lineEditTcpPort->setText(QApplication::translate("PETMainWindow", "15000", 0));
+        pushButtonConnect->setText(QApplication::translate("PETMainWindow", "Connect", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("PETMainWindow", "Master module", 0));
+        groupBoxData->setTitle(QString());
+        groupBox_6->setTitle(QString());
+        label_2->setText(QApplication::translate("PETMainWindow", "File Prefix:", 0));
+        label_6->setText(QApplication::translate("PETMainWindow", "File Path:", 0));
+        pushButtonCAddr->setText(QApplication::translate("PETMainWindow", "Save", 0));
+        groupBox_7->setTitle(QString());
+        label_4->setText(QApplication::translate("PETMainWindow", "Collect Time", 0));
+        lineEditCTime->setText(QApplication::translate("PETMainWindow", "1", 0));
+        comboBoxCTime->clear();
+        comboBoxCTime->insertItems(0, QStringList()
+         << QApplication::translate("PETMainWindow", "Minute", 0)
+         << QApplication::translate("PETMainWindow", "Second", 0)
+         << QApplication::translate("PETMainWindow", "Hour", 0)
+        );
+        pushButtonCollect->setText(QApplication::translate("PETMainWindow", "Collect", 0));
+        pushButtonCancel->setText(QApplication::translate("PETMainWindow", "Cancel", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("PETMainWindow", "Data module", 0));
+        groupBox_8->setTitle(QString());
+        label_10->setText(QApplication::translate("PETMainWindow", "Start time:", 0));
+        label_12->setText(QApplication::translate("PETMainWindow", "End time:", 0));
+        label_8->setText(QApplication::translate("PETMainWindow", "       PET Data Acquisition Program", 0));
     } // retranslateUi
 
 };

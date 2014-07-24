@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PETMainWindow_t {
-    QByteArrayData data[15];
-    char stringdata[317];
+    QByteArrayData data[17];
+    char stringdata[351];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,18 +37,21 @@ QT_MOC_LITERAL(4, 40, 28),
 QT_MOC_LITERAL(5, 69, 14),
 QT_MOC_LITERAL(6, 84, 15),
 QT_MOC_LITERAL(7, 100, 13),
-QT_MOC_LITERAL(8, 114, 28),
-QT_MOC_LITERAL(9, 143, 30),
-QT_MOC_LITERAL(10, 174, 28),
-QT_MOC_LITERAL(11, 203, 29),
-QT_MOC_LITERAL(12, 233, 28),
-QT_MOC_LITERAL(13, 262, 27),
-QT_MOC_LITERAL(14, 290, 26)
+QT_MOC_LITERAL(8, 114, 17),
+QT_MOC_LITERAL(9, 132, 15),
+QT_MOC_LITERAL(10, 148, 28),
+QT_MOC_LITERAL(11, 177, 30),
+QT_MOC_LITERAL(12, 208, 28),
+QT_MOC_LITERAL(13, 237, 29),
+QT_MOC_LITERAL(14, 267, 28),
+QT_MOC_LITERAL(15, 296, 27),
+QT_MOC_LITERAL(16, 324, 26)
     },
     "PETMainWindow\0ReadTcpData\0\0ReadTcpError\0"
     "QAbstractSocket::SocketError\0"
     "CollectTimeout\0ProgressTimeout\0"
-    "SetStateLabel\0on_pushButtonConnect_clicked\0"
+    "SetStateLabel\0SetStartTimeLabel\0"
+    "SetEndTimeLabel\0on_pushButtonConnect_clicked\0"
     "on_pushButtonInitClock_clicked\0"
     "on_pushButtonPoweron_clicked\0"
     "on_pushButtonPoweroff_clicked\0"
@@ -64,7 +67,7 @@ static const uint qt_meta_data_PETMainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      12,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -72,18 +75,20 @@ static const uint qt_meta_data_PETMainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   74,    2, 0x08 /* Private */,
-       3,    1,   75,    2, 0x08 /* Private */,
-       5,    0,   78,    2, 0x08 /* Private */,
-       6,    0,   79,    2, 0x08 /* Private */,
-       7,    2,   80,    2, 0x08 /* Private */,
-       8,    0,   85,    2, 0x08 /* Private */,
-       9,    0,   86,    2, 0x08 /* Private */,
-      10,    0,   87,    2, 0x08 /* Private */,
-      11,    0,   88,    2, 0x08 /* Private */,
-      12,    0,   89,    2, 0x08 /* Private */,
-      13,    0,   90,    2, 0x08 /* Private */,
-      14,    0,   91,    2, 0x08 /* Private */,
+       1,    0,   84,    2, 0x08 /* Private */,
+       3,    1,   85,    2, 0x08 /* Private */,
+       5,    0,   88,    2, 0x08 /* Private */,
+       6,    0,   89,    2, 0x08 /* Private */,
+       7,    2,   90,    2, 0x08 /* Private */,
+       8,    0,   95,    2, 0x08 /* Private */,
+       9,    0,   96,    2, 0x08 /* Private */,
+      10,    0,   97,    2, 0x08 /* Private */,
+      11,    0,   98,    2, 0x08 /* Private */,
+      12,    0,   99,    2, 0x08 /* Private */,
+      13,    0,  100,    2, 0x08 /* Private */,
+      14,    0,  101,    2, 0x08 /* Private */,
+      15,    0,  102,    2, 0x08 /* Private */,
+      16,    0,  103,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -91,6 +96,8 @@ static const uint qt_meta_data_PETMainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int, QMetaType::QString,    2,    2,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -112,13 +119,15 @@ void PETMainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 2: _t->CollectTimeout(); break;
         case 3: _t->ProgressTimeout(); break;
         case 4: _t->SetStateLabel((*reinterpret_cast< const int(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
-        case 5: _t->on_pushButtonConnect_clicked(); break;
-        case 6: _t->on_pushButtonInitClock_clicked(); break;
-        case 7: _t->on_pushButtonPoweron_clicked(); break;
-        case 8: _t->on_pushButtonPoweroff_clicked(); break;
-        case 9: _t->on_pushButtonCollect_clicked(); break;
-        case 10: _t->on_pushButtonCancel_clicked(); break;
-        case 11: _t->on_pushButtonCAddr_clicked(); break;
+        case 5: _t->SetStartTimeLabel(); break;
+        case 6: _t->SetEndTimeLabel(); break;
+        case 7: _t->on_pushButtonConnect_clicked(); break;
+        case 8: _t->on_pushButtonInitClock_clicked(); break;
+        case 9: _t->on_pushButtonPoweron_clicked(); break;
+        case 10: _t->on_pushButtonPoweroff_clicked(); break;
+        case 11: _t->on_pushButtonCollect_clicked(); break;
+        case 12: _t->on_pushButtonCancel_clicked(); break;
+        case 13: _t->on_pushButtonCAddr_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -160,13 +169,13 @@ int PETMainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 14;
     }
     return _id;
 }

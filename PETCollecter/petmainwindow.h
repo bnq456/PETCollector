@@ -50,6 +50,10 @@ private slots:
 
     void SetStateLabel(const int&,const QString&);
 
+    void SetStartTimeLabel();
+
+    void SetEndTimeLabel();
+
     void on_pushButtonConnect_clicked();
 
     void on_pushButtonInitClock_clicked();

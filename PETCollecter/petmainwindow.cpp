@@ -234,6 +234,8 @@ void PETMainWindow::on_pushButtonCollect_clicked()
     ptimer->start(100);
 
     StartDetector();
+
+
 }
 //! 取消
 void PETMainWindow::on_pushButtonCancel_clicked()
@@ -241,6 +243,8 @@ void PETMainWindow::on_pushButtonCancel_clicked()
     timer->stop();
     ui->groupBoxData->setDisabled(false);
     StopDetector();
+
+
 }
 //! 采集时钟
 void PETMainWindow::CollectTimeout()
@@ -285,18 +289,36 @@ void PETMainWindow::CheckThreadState()
 //! 开探测器 （底层）
 void PETMainWindow::StartDetector()
 {
-    dr0->SetFileName(QString(ui->lineEditCFname->text()+"_DE0.pet"));
+    QDateTime time = QDateTime::currentDateTime();
+    QString strn = time.toString("yyMMddhhmm");
+
+    SetStartTimeLabel();
+    dr0->SetFileName(QString(ui->lineEditCFname->text()+strn+"_DE0.pet"));
     dr0->SetFileDir(dir+"\\");
     dr0->DetectorStart();
-    dr1->SetFileName(QString(ui->lineEditCFname->text()+"_DE1.pet"));
+    dr1->SetFileName(QString(ui->lineEditCFname->text()+strn+"_DE1.pet"));
     dr1->SetFileDir(dir+"\\");
     dr1->DetectorStart();
 }
 //!　关探测器（底层）
 void PETMainWindow::StopDetector()
 {
+    SetEndTimeLabel();
     dr0->DetectorStop();
     dr1->DetectorStop();
 }
 
+void PETMainWindow::SetStartTimeLabel()
+{
+    QDateTime time = QDateTime::currentDateTime();
+    QString str = time.toString("yyyy-MM-dd hh:mm:ss ddd");
+    ui->lineEditStarttime->setText(str);
+}
+
+void PETMainWindow::SetEndTimeLabel()
+{
+    QDateTime time = QDateTime::currentDateTime();
+    QString str = time.toString("yyyy-MM-dd hh:mm:ss ddd");
+    ui->lineEditEndtime->setText(str);
+}
 
